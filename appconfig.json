@@ -1,0 +1,10 @@
+{
+    "db": {
+        "host": "localhost",
+        "user": "dbuser",
+        "password": "dbuser",
+        "database": "MCGrid",
+        "port": "5432",
+        "max": 30
+    }
+}
