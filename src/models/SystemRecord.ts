@@ -1,7 +1,7 @@
 
 export type SystemRecord = {
     id: number;
-    timeStamp : number;
+    timestamp : Date;
     
     gridVoltage : number;
     gridFreq : number;
