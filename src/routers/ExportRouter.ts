@@ -1,0 +1,16 @@
+import { Router } from "express";
+import ExportController from "../controllers/ExportController";
+import bodyParser from "body-parser";
+import express from 'express';
+const ExportRouter = Router();
+ExportRouter.use(bodyParser.json());
+// ExportRouter.use(bodyParser.urlencoded({ extended: true }));
+ExportRouter.get('/export', ExportController.exportData);
+ExportRouter.post('/export', ExportController.importData);
+export default ExportRouter;
+// const SystemRecordRouter = Router();
+// SystemRecordRouter.use(bodyParser.json());
+// SystemRecordRouter.use(bodyParser.urlencoded({ extended: true }));
+// SystemRecordRouter.post('/data', SystemRecordController.addRecord);
+// SystemRecordRouter.get('/data', SystemRecordController.getRecords);
+// export default SystemRecordRouter;
