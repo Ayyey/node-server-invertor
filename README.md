@@ -1,5 +1,5 @@
 # node-server-invertor
 Установка зависимостей
-### npm install
+### `npm install`
 Запуск 
-### npm start
+### `npm start`
